@@ -1,4 +1,4 @@
-package j4;
+package cmn;
 
 import lombok.Data;
 import lombok.Getter;

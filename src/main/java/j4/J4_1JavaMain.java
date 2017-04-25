@@ -8,7 +8,7 @@ import java.util.Comparator;
 /**
  * Created by kumagai on 2017/04/24.
  */
-public class J4JavaMain {
+public class J4_1JavaMain {
 
 
     static {
