@@ -15,10 +15,10 @@ public class J4_1JavaMain {
     }
     public static void main(String... args) {
         Student[] students = {
-                new Student("Ken", 100),
-                new Student("Shin", 60),
-                new Student("Takuya", 90),
-                new Student("taku", 84),
+                new Student("Ken", 18, 100),
+                new Student("Shin", 18, 60),
+                new Student("Takuya", 18, 90),
+                new Student("taku", 18, 84),
 
         };
         Arrays.stream(students)
@@ -36,7 +36,7 @@ public class J4_1JavaMain {
 
         }
         // 配列のバイナリサーチ
-        final int result = Arrays.binarySearch(students, new Student("taku", 84), comparator);
+        final int result = Arrays.binarySearch(students, new Student("taku", 17, 84), comparator);
         if (result >= 0) {
             System.out.println(students[result].toString());
         }

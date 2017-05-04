@@ -1,6 +1,7 @@
 package j4;
 
 
+import cmn.Person;
 import cmn.Student;
 
 import java.util.Arrays;
@@ -13,14 +14,14 @@ import java.util.stream.Collectors;
 public class J4_3JavaMain {
 
     public static void main(String... args) {
-        List<Student> studentList = Arrays.asList(
-                new Student("Ken", 100),
-                new Student("Shin", 60),
-                new Student("Takuya", 90),
-                new Student("taku", 84)
+        List<Person> studentList = Arrays.asList(
+                new Person("Ken", 100),
+                new Person("Shin", 60),
+                new Person("Takuya", 90),
+                new Person("taku", 84)
             );
         final List studentScoreList = studentList.stream()
-                .map(s -> s.getName() + ":" + s.getScore())
+                .map(s -> s.getName() + ":" + s.getAge())
                 .collect(Collectors.toList());
 
         studentScoreList.stream().sorted().forEach(System.out::println);

@@ -13,10 +13,10 @@ import java.util.stream.IntStream;
 public class J5_LambdaBasic {
 
     private static List<Student> studentList = Arrays.asList(
-            new Student("Ken", 100),
-            new Student("Shin", 60),
-            new Student("Takuya", 90),
-            new Student("taku", 84)
+            new Student("Ken", 14, 100),
+            new Student("Shin", 14, 60),
+            new Student("Takuya", 14, 90),
+            new Student("taku", 14, 84)
     );
     private static Map<Optional<String>, String> map = new HashMap<>();
     static {
